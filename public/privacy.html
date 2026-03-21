@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Artful Roots Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --cream: #FDFBF7;
+    --cream-deep: #F5F0E8;
+    --ink: #2A2724;
+    --ink-muted: #6B6560;
+    --ink-faint: #A09890;
+    --terracotta: #C4694A;
+    --terracotta-light: #F0E0D8;
+    --sage: #5A7A5C;
+    --sage-light: #DDE8D8;
+    --blue-montessori: #3A6FA8;
+    --blue-light: #D8E6F5;
+    --rule: rgba(42, 39, 36, 0.12);
+    --font-serif: 'Lora', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ─── GRAIN OVERLAY ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ─── TYPOGRAPHY ─── */
+  h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; line-height: 1.25; }
+  h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+  p { color: var(--ink-muted); }
+  a { color: inherit; text-decoration: none; }
+
+  .label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ─── LAYOUT ─── */
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+  .container-narrow { max-width: 680px; margin: 0 auto; padding: 0 2rem; }
+  section { padding: 7rem 0; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(253, 251, 247, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-logo {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .nav-logo-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    display: inline-block;
+  }
+
+  .nav-cta {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.55rem 1.25rem;
+    border: 1.5px solid var(--ink);
+    border-radius: 2px;
+    color: var(--ink);
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--ink); color: var(--cream); }
+
+  /* ─── CONTENT ─── */
+  .policy-header {
+    padding: 8rem 0 4rem;
+    text-align: center;
+  }
+
+  .policy-header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .policy-content h2 {
+    margin: 3rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .policy-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-left {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+  }
+
+  .footer-links a:hover { color: var(--ink); }
+
+  /* ─── FADE IN ANIMATIONS ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    Artful Roots Co.
+  </a>
+  <a href="/#download" class="nav-cta">Download on iOS</a>
+</nav>
+
+<!-- ─── HEADER ─── -->
+<header class="policy-header container">
+  <div class="fade-in visible">
+    <span class="label">Legal · Privacy</span>
+    <h1>Privacy Policy</h1>
+    <p class="label">Last updated: March 2026</p>
+  </div>
+</header>
+
+<div class="divider" style="height: 1px; background: var(--rule);"></div>
+
+<!-- ─── CONTENT ─── -->
+<main class="container-narrow policy-content">
+  <section class="fade-in visible">
+    <h2>Our Commitment to Privacy 🛡️</h2>
+    <p>At Clean Reader, we believe that learning to read should be a safe, calm, and private experience. We do not collect, store, or share any personal information from our users, including children. There are no accounts to create, no email addresses required to use the app, and no tracking of your child’s progress outside of your own device.</p>
+  </section>
+
+  <section class="fade-in visible" style="transition-delay: 0.1s;">
+    <h2>Data Collection and Usage 📥</h2>
+    <p>Clean Reader is a 100% offline-first application. Any progress data, such as completed stories or favorite sounds, is stored locally on your device and never leaves your phone or tablet. We do not use third-party analytics, advertising networks, or any software that tracks user behavior. We do not have access to your microphone, camera, or location.</p>
+  </section>
+
+  <section class="fade-in visible" style="transition-delay: 0.2s;">
+    <h2>Third-Party Services 🤝</h2>
+    <p>Clean Reader does not include any in-app purchases, links to social media, or external advertisements. The only external link provided is a "Support" link intended for parents, which leads to our contact form. If you contact us for support, we will only use your provided email address to respond to your inquiry and will never sell or share your contact information.</p>
+  </section>
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-left">
+          <span class="nav-logo-dot"></span>
+          <span style="font-family: var(--font-serif);">Artful Roots Co.</span>
+        </div>
+        <p class="footer-copy" style="margin-top: 0.3rem;">Redmond, WA · Building calm technology for children.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/privacy.html">Privacy</a></li>
+        <li><a href="#">Press Kit</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Simple intersection observer for fade-in effect
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
