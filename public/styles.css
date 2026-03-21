@@ -78,21 +78,20 @@ nav {
 }
 
 .nav-logo {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--ink);
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.85rem;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
 }
 
-.nav-logo-dot {
-  width: 8px;
-  height: 8px;
+.nav-logo img {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: var(--terracotta);
-  display: inline-block;
+  object-fit: cover;
 }
 
 .nav-links {
