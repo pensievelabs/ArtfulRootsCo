@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-in, .fade-up').forEach(el => observer.observe(el));
 
 // ─── COLLAPSIBLE SECTION LOGIC ───
 document.addEventListener('DOMContentLoaded', () => {
