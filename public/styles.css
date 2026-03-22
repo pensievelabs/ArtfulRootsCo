@@ -769,6 +769,61 @@ nav {
 
 .btn-signup:hover { background: #b05c40; }
 
+/* ─── SOUNDS GRID ─── */
+.sounds-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.sound-btn {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sound-btn.vowel {
+  background: var(--blue-light);
+  color: var(--blue-montessori);
+  border-color: rgba(58, 111, 168, 0.2);
+}
+
+.sound-btn.consonant {
+  background: var(--terracotta-light);
+  color: var(--terracotta);
+  border-color: rgba(196, 105, 74, 0.2);
+}
+
+.sound-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(42, 39, 36, 0.08);
+}
+
+.sound-btn:active {
+  transform: translateY(0) scale(0.95);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .sounds-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 /* ─── FOOTER ─── */
 footer {
   padding: 3rem 0;
