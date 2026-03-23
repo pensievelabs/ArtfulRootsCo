@@ -31,3 +31,12 @@ To maintain the "Editorial Calm" aesthetic and ensure long-term consistency:
 - [ ] Buttons and interactive elements are an appropriate size for touch on mobile/tablet.
 - [ ] No horizontal scrolling occurs on mobile/tablet.
 - [ ] The hamburger menu functional and accessible.
+
+## Backend & Vercel Routing Guidelines
+
+When configuring Vercel serverless functions alongside a primary application (like NestJS at `src/main.ts`):
+- If utilizing the `builds` array in `vercel.json` (e.g., compiling `"api/**/*.js"`), **Vercel disables zero-configuration filesystem routing**.
+- API endpoint requests will result in a 404 unless routed correctly. You **must** use the legacy `routes` array and explicitly append the `.js` file extension to the destination so Vercel can find the compiled function output:
+  - `{"src": "/api/(.*)", "dest": "/api/$1.js"}`
+- Always ensure catch-all application routes (e.g., `/(.*)`) are ordered **after** the API routes. 
+- Use `resend.contacts.create` with `segments` arrays for subscriber features instead of deprecated `audiences`.
