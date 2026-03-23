@@ -69,3 +69,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ─── MOBILE NAV TOGGLE ───
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.classList.contains('active');
+      toggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', !isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu when clicking outside nav
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
+        toggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
