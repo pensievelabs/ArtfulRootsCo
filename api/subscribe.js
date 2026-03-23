@@ -60,6 +60,10 @@ function isValidEmail(email) {
 }
 
 module.exports = async function handler(req, res) {
+  console.log('[subscribe] ========================================');
+  console.log('[subscribe] Endpoint Hit! Method:', req.method, 'URL:', req.url);
+  console.log('[subscribe] Headers:', JSON.stringify(req.headers));
+  console.log('[subscribe] Body:', JSON.stringify(req.body));
   // ── CORS ──
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -113,3 +117,7 @@ module.exports = async function handler(req, res) {
 
   return res.status(200).json({ success: true });
 };
+// Add a global catch to ensure no unhandled promise rejections kill the function silently
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[subscribe] Unhandled Rejection at:', promise, 'reason:', reason);
+});

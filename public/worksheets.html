@@ -618,7 +618,16 @@
           body: JSON.stringify({ email, pack: 'full' }),
         });
 
-        const data = await response.json();
+        console.log('Fetch completed. Status:', response.status);
+
+        let data;
+        try {
+          data = await response.json();
+          console.log('Response JSON parsed:', data);
+        } catch (parseErr) {
+          console.error('Failed to parse JSON. The server likely returned an HTML Vercel error page.', parseErr);
+          throw new Error('Server returned an invalid response type. Status: ' + response.status);
+        }
 
         if (response.ok && data.success) {
           // ── Success — replace form with confirmation ──
@@ -647,14 +656,22 @@
           // ── API error — show message, restore button ──
           submitBtn.innerHTML = originalLabel;
           submitBtn.disabled = false;
+          console.error('API Error Response:', data);
           showFormError(wrapperEl, data.error || 'Something went wrong. Please try again.');
         }
 
       } catch (networkErr) {
         // ── Network error ──
+        console.error('Caught error during fetch or execution:', networkErr);
         submitBtn.innerHTML = originalLabel;
         submitBtn.disabled = false;
-        showFormError(wrapperEl, 'Network error — please check your connection and try again.');
+        
+        // Show the precise error if available instead of a generic network error
+        const errMsg = networkErr.message && !networkErr.message.includes('fetch') 
+          ? networkErr.message 
+          : 'Network error — please check your connection and try again.';
+          
+        showFormError(wrapperEl, errMsg);
       }
     }
 
