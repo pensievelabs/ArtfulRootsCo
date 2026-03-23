@@ -65,7 +65,12 @@
 - Section vertical padding: **7rem 0** (generous breathing room)
 - All borders: `1px solid var(--rule)` — never heavier
 - Border-radius: **2–4px** on cards and buttons (restrained, not pill-shaped)
-- Primary grid: **2-column** on desktop; single column on mobile (≤768px)
+- Primary grid: **2-column** on desktop; single column on mobile (≤768px).
+- **Three-Tier Breakpoints**: 
+    - Desktop: > 1024px
+    - Tablet: 769px – 1024px (compact nav)
+    - Phone: ≤ 768px (hamburger menu MANDATORY)
+- **Side Padding**: Minimum `1.5rem` to `2rem` on all screens to prevent content from touching edges.
 - No card drop shadows. Use borders and background-color shifts only.
 
 #### Motion
@@ -80,20 +85,15 @@
 
 ---
 
-### Page Structure (index.html)
+### Page Structure
 
-| Section | Purpose | Notes |
+| Page / Section | Purpose | Notes |
 |---------|---------|-------|
-| `<nav>` | Fixed top bar | Logo · Nav links · iOS download CTA |
-| `#hero` | First impression | H1, lead text, 2 CTAs, phone mockup |
-| `.manifesto` | Founder voice | Dark background, large italic quote |
-| `#about` | Founder story | Portrait placeholder + 3 paragraphs |
-| `#app` | App features | Feature grid (6 cards) + 3 screenshot placeholders |
-| `#philosophy` | 4 design pillars | Calm Tech commitments |
-| `tech table` | Transparency | Stack table for parent trust |
-| `.roadmap` | What's next | 4 phases listed plainly |
-| `.signup` | Email capture | Dark section, minimal form |
-| `footer` | Links | Privacy · Press Kit · Contact |
+| **Global** `<nav>` | Fixed top bar | Logo · Nav links · Hamburger toggle on mobile/tablet |
+| **index.html** | Landing page | Home content with hero and feature overview |
+| **about.html** | Founder story | Portrait placeholder + 3 paragraphs; uses `.policy-header` |
+| **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` |
+| **privacy.html** | Terms | Legal content; uses `.policy-header` |
 
 ---
 

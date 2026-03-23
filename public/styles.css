@@ -1060,7 +1060,7 @@ footer {
 /* ─── WORKSHEET PAGE SPECIFIC STYLES ─── */
 
 /* HERO (Worksheets) */
-.hero-worksheets { background: var(--ink); padding: 9rem 0 6rem; position: relative; overflow: hidden; }
+.hero-worksheets { background: var(--ink); padding-top: 9rem; padding-bottom: 6rem; position: relative; overflow: hidden; }
 .hero-worksheets::before { content: '"'; font-family: var(--font-serif); font-size: 32rem; color: rgba(255,255,255,0.025); position: absolute; top: -8rem; left: -2rem; line-height: 1; pointer-events: none; }
 .hero-inner-ws { display: grid; grid-template-columns: 1fr 380px; gap: 4rem; align-items: center; }
 .hero-worksheets h1 { color: #F5F0E8; margin-bottom: 1.5rem; }
@@ -1224,7 +1224,7 @@ footer {
 @media(max-width:540px){.ws-grid{grid-template-columns:1fr;}}
 
 /* POLICY PAGES (Privacy, etc.) */
-.policy-header { padding: 9rem 0 4rem; text-align: left; }
+.policy-header { padding-top: 9rem; padding-bottom: 4rem; text-align: left; }
 .policy-header h1 { margin: 0.85rem 0 1rem; }
 .policy-content { padding-bottom: 8rem; }
 .policy-content section { padding: 3rem 0; border-bottom: 1px solid var(--rule); }
