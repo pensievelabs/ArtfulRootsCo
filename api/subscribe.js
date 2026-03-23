@@ -90,14 +90,22 @@ module.exports = async function handler(req, res) {
 
   // ── Send email ──
   try {
-    await resend.emails.send({
+    const { data: emailData, error: emailError } = await resend.emails.send({
       from:    'Clean Reader <worksheets@artfulroots.co>',
       to:      [cleanEmail],
       subject: 'Your Clean Reader phonics worksheets',
       html:    buildWorksheetEmail(FULL_PACK),
     });
+
+    if (emailError) {
+      console.error('[subscribe] Resend email error response:', JSON.stringify(emailError));
+      return res.status(500).json({
+        error: 'Something went wrong sending your email. Please try again.',
+      });
+    }
+    console.log('[subscribe] Email sent successfully. ID:', emailData?.id);
   } catch (emailErr) {
-    console.error('[subscribe] Email send failed:', emailErr);
+    console.error('[subscribe] Email send exception:', emailErr);
     return res.status(500).json({
       error: 'Something went wrong sending your email. Please try again.',
     });
@@ -105,14 +113,21 @@ module.exports = async function handler(req, res) {
 
   // ── Add to segment (non-blocking — failure does not affect user) ──
   try {
-    await resend.contacts.create({
+    console.log('[subscribe] Adding contact to segment. Segment ID:', SEGMENT_ID);
+    const { data: contactData, error: contactError } = await resend.contacts.create({
       email:        cleanEmail,
       unsubscribed: false,
       segments:     [{ id: SEGMENT_ID }],
     });
+
+    if (contactError) {
+      console.error('[subscribe] Resend contacts.create error response:', JSON.stringify(contactError));
+    } else {
+      console.log('[subscribe] Contact added successfully:', JSON.stringify(contactData));
+    }
   } catch (listErr) {
     // Log but don't fail — email already sent successfully
-    console.error('[subscribe] Segment add failed:', listErr);
+    console.error('[subscribe] Segment add exception:', listErr);
   }
 
   return res.status(200).json({ success: true });
