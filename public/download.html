@@ -1,217 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Download Clean Reader — Artful Roots Co.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="/styles.css" />
-<style>
-  .download-hero {
-    padding: 10rem 2rem 6rem;
-    text-align: center;
-    background: var(--cream);
-  }
-  .download-price {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    color: var(--terracotta);
-    margin: 1.5rem 0 2.5rem;
-    font-style: italic;
-  }
-  .upsell-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin: 6rem 0;
-  }
-  .upsell-item {
-    padding: 3rem;
-    background: var(--cream-deep);
-    border-radius: 4px;
-    border: 1px solid var(--rule);
-    transition: transform 0.2s ease;
-  }
-  .upsell-item:hover {
-    transform: translateY(-4px);
-  }
-  .upsell-icon {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-  .upsell-item h3 {
-    margin-bottom: 1rem;
-    color: var(--ink);
-  }
-  .upsell-item p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  .download-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-  @media (max-width: 768px) {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Clean Reader — Artful Roots Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
     .download-hero {
-      padding: 8rem 1.5rem 4rem;
+      padding: 10rem 2rem 6rem;
+      text-align: center;
+      background: var(--cream);
     }
-    .download-actions {
-      flex-direction: column;
-      align-items: stretch;
-      max-width: 320px;
-      margin: 0 auto;
+
+    .download-price {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--terracotta);
+      margin: 1.5rem 0 2.5rem;
+      font-style: italic;
     }
-    .nav-cta-group {
-      display: none;
-    }
+
     .upsell-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      margin: 6rem 0;
     }
+
     .upsell-item {
-      padding: 2rem;
+      padding: 3rem;
+      background: var(--cream-deep);
+      border-radius: 4px;
+      border: 1px solid var(--rule);
+      transition: transform 0.2s ease;
     }
-  }
-</style>
+
+    .upsell-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .upsell-icon {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .upsell-item h3 {
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .upsell-item p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .download-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .download-hero {
+        padding: 8rem 1.5rem 4rem;
+      }
+
+      .download-actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+
+      .nav-cta-group {
+        display: none;
+      }
+
+      .upsell-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .upsell-item {
+        padding: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ─── NAVIGATION ─── -->
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="/assets/ArtfulRootsCo_Sq.jpg" alt="Artful Roots" />
-    Artful Roots Co.
-  </a>
-  <ul class="nav-links">
-    <li><a href="/download.html">The App</a></li>
-    <li><a href="/#philosophy">Philosophy</a></li>
-    <li><a href="/worksheets.html">Free Resources</a></li>
-    <li><a href="/about.html">About</a></li>
-  </ul>
-  <button class="mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-    <span class="hamburger-line"></span>
-    <span class="hamburger-line"></span>
-    <span class="hamburger-line"></span>
-  </button>
-  <div class="nav-cta-group">
-    <a href="https://apps.apple.com/us/app/clean-reader-learn-to-read/id6759177993" class="nav-cta" title="Download on App Store" target="_blank" rel="noopener">
-      <img src="/assets/apple-logo.svg" alt="Apple logo" />
+  <!-- ─── NAVIGATION ─── -->
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="/assets/ArtfulRootsCo_Sq.jpg" alt="Artful Roots" />
+      Artful Roots Co.
     </a>
-    <a href="/download.html" class="nav-cta" title="Download on iOS / Android">
-      <img src="/assets/android-logo.svg" alt="Android logo" class="android-nav" />
-    </a>
-  </div>
-</nav>
-
-<!-- ─── HERO ─── -->
-<header class="download-hero container">
-  <div class="fade-in">
-    <span class="label">Get the App</span>
-    <h1 style="margin-top: 1rem;">Clean Reader — Learn to Read</h1>
-    <p class="download-price">$4.99 one-time purchase</p>
-    
-    <div class="download-actions">
-      <a href="https://apps.apple.com/us/app/clean-reader-learn-to-read/id6759177993" class="btn-download" target="_blank" rel="noopener">
-        <img src="/assets/apple-logo.svg" alt="Apple logo" class="btn-download-icon" />
-        <div class="btn-download-text">
-          <span class="btn-download-label">Download on the</span>
-          <span>App Store</span>
-        </div>
+    <ul class="nav-links">
+      <li><a href="/download.html">The App</a></li>
+      <li><a href="/#philosophy">Philosophy</a></li>
+      <li><a href="/worksheets.html">Free Resources</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+    <button class="mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-cta-group">
+      <a href="https://apps.apple.com/us/app/clean-reader-learn-to-read/id6759177993" class="nav-cta"
+        title="Download on App Store" target="_blank" rel="noopener">
+        <img src="/assets/apple-logo.svg" alt="Apple logo" />
       </a>
-      <a href="#" class="btn-download disabled">
-        <img src="/assets/android-logo.svg" alt="Android logo" class="btn-download-icon" />
-        <div class="btn-download-text">
-          <span class="btn-download-label">Coming soon to</span>
-          <span>Android</span>
-        </div>
+      <a href="/download.html" class="nav-cta" title="Download on iOS / Android">
+        <img src="/assets/android-logo.svg" alt="Android logo" class="android-nav" />
       </a>
     </div>
-  </div>
-</header>
+  </nav>
 
-<div class="divider"></div>
+  <!-- ─── HERO ─── -->
+  <header class="download-hero container">
+    <div class="fade-in">
+      <span class="label">Get the App</span>
+      <h1 style="margin-top: 1rem;">Clean Reader — Learn to Read</h1>
+      <p class="download-price">$4.99 one-time purchase</p>
 
-<!-- ─── UPSELL FEATURES ─── -->
-<section class="container">
-  <div class="upsell-grid">
-    <div class="upsell-item fade-in">
-      <span class="upsell-icon">🛡️</span>
-      <h3>Fully Private</h3>
-      <p>Your child's learning is their own. No accounts, no data collection, and no information ever leaves the device.</p>
-    </div>
-    
-    <div class="upsell-item fade-in" style="transition-delay: 0.1s;">
-      <span class="upsell-icon">🧘</span>
-      <h3>Built on Calm Tech</h3>
-      <p>Designed for focus. We use Montessori-inspired aesthetics and zero gamification — no dopamine loops, just the satisfaction of reading.</p>
-    </div>
-    
-    <div class="upsell-item fade-in" style="transition-delay: 0.15s;">
-      <span class="upsell-icon">✈️</span>
-      <h3>Works Completely Offline</h3>
-      <p>Perfect for flights or long car rides. Your children can learn something meaningful wherever they are, without needing an internet connection.</p>
-    </div>
-    
-    <div class="upsell-item fade-in" style="transition-delay: 0.2s;">
-      <span class="upsell-icon">✨</span>
-      <h3>Transparent & Simple</h3>
-      <p>One price, forever. No in-app purchases, no subscriptions, and absolutely no hidden costs or marketing noise.</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ─── SNEAK PEEK (Screenshots) ─── -->
-<section class="container" style="padding: 7rem 0;">
-  <div class="fade-in" style="text-align: center; margin-bottom: 4rem;">
-    <span class="label">Sneak Peek</span>
-    <h2 style="margin-top: 1rem;">A digital workbook on glass.</h2>
-  </div>
-  
-  <div class="screenshots-row fade-in">
-    <div class="screenshot-frame">
-      <img src="/assets/iPhone/2. Sounds.jpg" alt="Soundboard Screen" class="screenshot-image" />
-      <div class="screenshot-label">Letter Sounds</div>
-    </div>
-    <div class="screenshot-frame">
-      <img src="/assets/iPhone/4. Sentences.jpg" alt="Flashcards Screen" class="screenshot-image" />
-      <div class="screenshot-label">Smart Flashcards</div>
-    </div>
-    <div class="screenshot-frame">
-      <img src="/assets/iPhone/5. Stories.jpg" alt="Reader Screen" class="screenshot-image" />
-      <div class="screenshot-label">Independent Reading</div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── FOOTER ─── -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div>
-        <a href="/" class="footer-left" style="gap: 0.5rem; font-family: var(--font-serif); font-size: 1rem; color: var(--ink); display: flex; align-items: center;">
-          <img src="/assets/ArtfulRootsCo_Sq.jpg" alt="Artful Roots" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover;" />
-          Artful Roots Co.
+      <div class="download-actions">
+        <a href="https://apps.apple.com/us/app/clean-reader-learn-to-read/id6759177993" class="btn-download"
+          target="_blank" rel="noopener">
+          <img src="/assets/apple-logo.svg" alt="Apple logo" class="btn-download-icon" />
+          <div class="btn-download-text">
+            <span class="btn-download-label">Download on the</span>
+            <span>App Store</span>
+          </div>
         </a>
-        <p class="footer-copy" style="margin-top: 0.3rem;">Redmond, WA · Building calm technology for children.</p>
+        <a href="#" class="btn-download disabled">
+          <img src="/assets/android-logo.svg" alt="Android logo" class="btn-download-icon" />
+          <div class="btn-download-text">
+            <span class="btn-download-label">Coming soon to</span>
+            <span>Android</span>
+          </div>
+        </a>
       </div>
-      <ul class="footer-links">
-        <li><a href="/privacy.html">Privacy</a></li>
-        <li><a href="#">Press Kit</a></li>
-        <li><a href="mailto:hello@artfulroots.co">Contact</a></li>
-      </ul>
     </div>
-  </div>
-</footer>
+  </header>
 
-<script src="/scripts.js"></script>
+  <div class="divider"></div>
+
+  <!-- ─── UPSELL FEATURES ─── -->
+  <section class="container">
+    <div class="upsell-grid">
+      <div class="upsell-item fade-in">
+        <span class="upsell-icon">✈️</span>
+        <h3>Works Completely Offline</h3>
+        <p>Perfect for flights or long car rides. Your children can learn something meaningful wherever they are,
+          without needing an internet connection.</p>
+      </div>
+
+      <div class="upsell-item fade-in" style="transition-delay: 0.1s;">
+        <span class="upsell-icon">📚</span>
+        <h3>Montessori & Science of Reading</h3>
+        <p>Grounded in the Science of Reading — phonics-first, systematic, and built for the way young children actually
+          learn. Montessori-inspired aesthetics with zero gamification.</p>
+      </div>
+
+      <div class="upsell-item fade-in" style="transition-delay: 0.15s;">
+        <span class="upsell-icon">🛡️</span>
+        <h3>Fully Private</h3>
+        <p>Your child's learning is their own. No accounts, no data collection, and no information ever leaves the
+          device.</p>
+      </div>
+
+      <div class="upsell-item fade-in" style="transition-delay: 0.2s;">
+        <span class="upsell-icon">✨</span>
+        <h3>Transparent & Simple</h3>
+        <p>One price, forever. No in-app purchases, no subscriptions, and absolutely no hidden costs or marketing noise.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ─── SNEAK PEEK (Screenshots) ─── -->
+  <section class="container" style="padding: 7rem 0;">
+    <div class="fade-in" style="text-align: center; margin-bottom: 4rem;">
+      <span class="label">Sneak Peek</span>
+      <h2 style="margin-top: 1rem;">A digital workbook on glass.</h2>
+    </div>
+
+    <div class="screenshots-row fade-in">
+      <div class="screenshot-frame">
+        <img src="/assets/iPhone/2. Sounds.jpg" alt="Soundboard Screen" class="screenshot-image" />
+        <div class="screenshot-label">Letter Sounds</div>
+      </div>
+      <div class="screenshot-frame">
+        <img src="/assets/iPhone/4. Sentences.jpg" alt="Flashcards Screen" class="screenshot-image" />
+        <div class="screenshot-label">Smart Flashcards</div>
+      </div>
+      <div class="screenshot-frame">
+        <img src="/assets/iPhone/5. Stories.jpg" alt="Reader Screen" class="screenshot-image" />
+        <div class="screenshot-label">Independent Reading</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="/" class="footer-left"
+            style="gap: 0.5rem; font-family: var(--font-serif); font-size: 1rem; color: var(--ink); display: flex; align-items: center;">
+            <img src="/assets/ArtfulRootsCo_Sq.jpg" alt="Artful Roots"
+              style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover;" />
+            Artful Roots Co.
+          </a>
+          <p class="footer-copy" style="margin-top: 0.3rem;">Redmond, WA · Building calm technology for children.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="mailto:hello@artfulroots.co">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts.js"></script>
 
 </body>
+
 </html>
