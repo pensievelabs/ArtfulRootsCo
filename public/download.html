@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/styles.css" />
 <style>
   .download-hero {
-    padding: 10rem 0 6rem;
+    padding: 10rem 2rem 6rem;
     text-align: center;
     background: var(--cream);
   }
@@ -58,6 +58,18 @@
     flex-wrap: wrap;
   }
   @media (max-width: 768px) {
+    .download-hero {
+      padding: 8rem 1.5rem 4rem;
+    }
+    .download-actions {
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .nav-cta-group {
+      display: none;
+    }
     .upsell-grid {
       grid-template-columns: 1fr;
       gap: 1.5rem;
