@@ -15,6 +15,7 @@
 **App name:** Clean Reader
 **Tagline:** "Learning to read, without the noise."
 **Mission:** A one-person studio building technology that earns a place in a child's hands.
+**Pricing:** $4.99 one-time purchase. No subscriptions or IAPs.
 
 **Voice principles:**
 - Speak *to* parents, not *at* them
@@ -91,6 +92,7 @@
 |---------|---------|-------|
 | **Global** `<nav>` | Fixed top bar | Logo · Nav links · Hamburger toggle on mobile/tablet |
 | **index.html** | Landing page | Home content with hero and feature overview |
+| **download.html**| Acquisition | Dedicated acquisition page with pricing and upsell; uses `.download-hero` |
 | **about.html** | Founder story | Portrait placeholder + 3 paragraphs; uses `.policy-header` |
 | **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` |
 | **privacy.html** | Terms | Legal content; uses `.policy-header` |
