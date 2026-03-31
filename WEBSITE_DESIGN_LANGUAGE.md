@@ -141,7 +141,8 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 | Placeholder | Location | What to replace with |
 |-------------|----------|----------------------|
 | Founder photo | `#about` | Square/portrait photo |
-| "Download on iOS" link | Nav + hero CTA | App Store URL |
+| "Download on iOS" link | Nav + hero CTA | App Store URL (Live) |
+| "Get it on Android" link | Nav + hero CTA | Play Store URL (Live) |
 | Screenshot × 3 | App section | Actual app screenshots |
 | Email form action | Signup section | Mailchimp / Resend endpoint |
 | `hello@calmstudio.app` | Footer | Real contact email |
