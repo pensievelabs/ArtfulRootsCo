@@ -47,7 +47,8 @@ function successPage() {
     </h1>
     <p style="font-size:0.95rem;color:#6B6560;line-height:1.75;margin:0 0 2rem;">
       You won't receive any further emails from Clean Reader.<br/>
-      Your two free worksheets are still available any time.
+      Your free worksheets are still available any time.
+
     </p>
     <a href="https://www.artfulroots.co/worksheets.html"
        style="font-size:0.85rem;color:#C4694A;font-family:sans-serif;">
