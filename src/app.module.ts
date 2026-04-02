@@ -8,6 +8,9 @@ import { AppService } from './app.service';
   imports: [
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
+      serveStaticOptions: {
+        extensions: ['html'],
+      },
     }),
   ],
   controllers: [AppController],
