@@ -173,13 +173,23 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 └── vercel.json         ← (optional config)
 ```
 
-**`vercel.json` (optional, for clean URLs):**
+**`vercel.json` (Required for SEO):**
+Ensure `cleanUrls` is set to `true` and `trailingSlash` is set to `false` to maintain single-URL consistency.
+
 ```json
 {
   "cleanUrls": true,
   "trailingSlash": false
 }
 ```
+
+---
+
+### SEO Best Practices
+
+To avoid duplicate content and ensure search engines index the correct pages:
+- **Canonical Tags**: Every public-facing HTML file must have a `<link rel="canonical" href="https://artfulroots.co/[path]">` in the `<head>`.
+- **URL Consistency**: Use non-www, HTTPS, and avoid `.html` extensions in internal links.
 
 **Deploy command:** `vercel --prod` or connect GitHub repo to Vercel for automatic deploys.
 
