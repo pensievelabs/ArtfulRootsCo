@@ -132,7 +132,12 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 **Phone device mockup (hero):**
 - Dark frame (`var(--ink)`) with rounded corners
 - Shows a live-rendered mini soundboard using real app colors
-- Hides on mobile (`display: none` below 768px)
+- Hides on mobile (`display: none` below 768px), except in `.hero-worksheets` where a composite visual is used.
+
+**Composite worksheet visual (resources):**
+- Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
+- Uses `.worksheet-visual-group` for relative positioning and responsive scaling.
+- Remains visible on all layouts to bridge the gap between physical and digital.
 
 ---
 

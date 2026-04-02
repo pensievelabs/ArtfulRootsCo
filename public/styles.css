@@ -1129,6 +1129,64 @@ footer {
 
 /* PHONE MOCKUP (Worksheets) */
 .device-ws { width: 250px; background: #1a1714; border-radius: 34px; padding: 12px; box-shadow: 0 32px 64px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06); }
+
+/* --- WORKSHEET COMPOSITE VISUAL --- */
+.worksheet-visual-group {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.worksheet-paper {
+  width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05);
+  transform: rotate(-3deg);
+  background: #fff; /* Fallback */
+}
+
+.worksheet-phone {
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+  width: 180px !important;
+  transform: rotate(4deg) translateY(10px);
+  z-index: 5;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+.worksheet-phone .device-screen {
+  border-radius: 18px; /* Slightly tighter for scaled down phone */
+}
+
+@media (max-width: 820px) {
+  .hero-worksheets .hero-visual {
+    display: flex !important; /* Force visibility on worksheets page */
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .worksheet-visual-group {
+    max-width: 320px;
+  }
+  .worksheet-phone {
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .worksheet-visual-group {
+    max-width: 260px;
+  }
+  .worksheet-phone {
+    width: 130px !important;
+    right: -10px;
+  }
+}
+
 .screen-word-ws { display: flex; gap: 5px; align-items: center; }
 .screen-tile-ws { width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 1.25rem; font-weight: 500; }
 .screen-tile-ws.v { background: var(--blue-light); color: var(--blue-m); }
