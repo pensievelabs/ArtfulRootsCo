@@ -1164,8 +1164,9 @@ footer {
 }
 
 @media (max-width: 820px) {
-  .hero-worksheets .hero-visual {
-    display: flex !important; /* Force visibility on worksheets page */
+  .hero-worksheets .hero-visual,
+  .hero .hero-visual {
+    display: flex !important; /* Force visibility on hero sections */
     justify-content: center;
     margin-top: 3rem;
   }
