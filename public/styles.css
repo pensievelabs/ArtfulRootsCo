@@ -908,8 +908,13 @@ footer {
 /* PHONE: ≤768px — hamburger menu */
 @media (max-width: 768px) {
   .mobile-nav-toggle {
-    display: block;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
     order: 3;
+    width: 32px;
+    height: 32px;
   }
   .nav-links {
     display: none;

@@ -198,4 +198,3 @@ To avoid duplicate content and ensure search engines index the correct pages:
 
 **Deploy command:** `vercel --prod` or connect GitHub repo to Vercel for automatic deploys.
 
-**Custom domain:** Set `calmstudio.app` (or your chosen domain) in Vercel project settings → Domains.
