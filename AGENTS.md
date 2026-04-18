@@ -31,6 +31,7 @@ To maintain the "Editorial Calm" aesthetic and ensure long-term consistency:
 - [ ] Buttons and interactive elements are an appropriate size for touch on mobile/tablet.
 - [ ] No horizontal scrolling occurs on mobile/tablet.
 - [ ] The hamburger menu functional and accessible.
+- [ ] New HTML pages must include the GA4 tracking snippet (Measurement ID: `G-3XDSSCVQ25`) in the `<head>`.
 
 ## Backend & Vercel Routing Guidelines
 

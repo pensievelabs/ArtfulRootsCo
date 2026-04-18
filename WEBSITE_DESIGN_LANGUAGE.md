@@ -160,7 +160,6 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 - Display cartoon characters or illustrated mascots
 - Use purple gradients, neon accents, or dark-mode-first design
 - Include pop-ups, interstitials, or cookie banners beyond what's legally required
-- Embed any third-party tracking scripts (Google Analytics, Meta Pixel, etc.) — if analytics are needed, use a privacy-first tool like Fathom or Plausible
 
 ---
 
@@ -194,6 +193,9 @@ Ensure `cleanUrls` is set to `true` and `trailingSlash` is set to `false` to mai
 To avoid duplicate content and ensure search engines index the correct pages:
 - **Canonical Tags**: Every public-facing HTML file must have a `<link rel="canonical" href="https://artfulroots.co/[path]">` in the `<head>`.
 - **URL Consistency**: Use non-www, HTTPS, and avoid `.html` extensions in internal links.
+
+### Analytics
+- **Google Analytics 4**: Every public-facing HTML file must include the GA4 tracking snippet (Measurement ID: `G-3XDSSCVQ25`) directly before the `</head>` closing tag.
 
 **Deploy command:** `vercel --prod` or connect GitHub repo to Vercel for automatic deploys.
 
