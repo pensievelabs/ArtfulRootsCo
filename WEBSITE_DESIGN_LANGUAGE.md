@@ -2,20 +2,20 @@
 
 ---
 
-## 5. The Web Designer (Marketing Site)
-**Role:** Maintains the public-facing website at [calmstudio.app] — the company site and landing page for Clean Reader.
-**Audience:** Parents of children ages 3–6 seeking calm, educationally-grounded screen time.
+## 5. The Web Designer (Brand Portal)
+**Role:** Maintains the public-facing website at [artfulroots.co] — the company portal and product landing pages.
+**Audience:** Parents of children ages 3–7 seeking calm, educationally-grounded tools.
 **Tone:** Thoughtful, unhurried, honest. Like reading a well-edited independent magazine, not a SaaS landing page.
 
 ---
 
 ### Brand Identity
 
-**Studio name:** Calm Studio
-**App name:** Clean Reader
-**Tagline:** "Learning to read, without the noise."
-**Mission:** A one-person studio building technology that earns a place in a child's hands.
-**Pricing:** $4.99 one-time purchase. No subscriptions or IAPs.
+**Studio name:** Artful Roots Co.
+**App names:** Clean Reader, Clean Math
+**Tagline:** "Calm technology for children."
+**Mission:** A studio building tools that respect a child's attention and intelligence.
+**Pricing:** $4.99 one-time purchase per app. No subscriptions or IAPs.
 
 **Voice principles:**
 - Speak *to* parents, not *at* them
@@ -90,12 +90,15 @@
 
 | Page / Section | Purpose | Notes |
 |---------|---------|-------|
-| **Global** `<nav>` | Fixed top bar | Logo · Nav links · Hamburger toggle on mobile/tablet |
-| **index.html** | Landing page | Home content with hero and feature overview |
-| **download.html**| Acquisition | Dedicated acquisition page with pricing and upsell; uses `.download-hero` |
-| **about.html** | Founder story | Portrait placeholder + 3 paragraphs; uses `.policy-header` |
+| **Global** `<nav>` | Fixed top bar | Logo · Nav links · Philosophy-first order |
+| **index.html** | Brand Portal | Hero mission statement, philosophy teaser, product cards |
+| **CleanReader.html** | Product Page | Dedicated page for Clean Reader phonics |
+| **CleanMath.html** | Product Page | Dedicated page for Clean Math Montessori tools |
+| **download-clean-reader.html**| Acquisition | Acquisition page for Clean Reader |
+| **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
+| **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
 | **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` |
-| **privacy.html** | Terms | Legal content; uses `.policy-header` |
+| **privacy.html** | Terms | Brand-wide privacy policy; uses `.policy-header` |
 
 ---
 
@@ -129,12 +132,13 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 - Caption below in `.label` style
 - **Replace with actual screenshots when available**
 
-**Phone device mockup (hero):**
-- Dark frame (`var(--ink)`) with rounded corners
-- Shows a live-rendered mini soundboard using real app colors
-- Hides on mobile (`display: none` below 768px), except in `.hero-worksheets` where a composite visual is used.
+**Product showcase cards (index.html):**
+- 2-column grid on desktop, 1 on mobile
+- `aspect-ratio: 16/10` preview at top
+- H3 + brand label + body copy + "Learn more" button
+- Hover: `transform: translateY(-4px)`, shadow transition
 
-**Composite worksheet visual (hero):**
+**Composite worksheet visual (product pages):**
 - Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
 - Uses `.worksheet-visual-group` for relative positioning and responsive scaling.
 - Remains visible on all layouts to bridge the gap between physical and digital.
