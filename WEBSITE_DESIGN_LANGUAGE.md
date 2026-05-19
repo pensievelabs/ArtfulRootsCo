@@ -92,8 +92,8 @@
 |---------|---------|-------|
 | **Global** `<nav>` | Fixed top bar | Logo · Nav links · Philosophy-first order |
 | **index.html** | Brand Portal | Hero mission statement, philosophy teaser, product cards |
-| **CleanReader.html** | Product Page | Dedicated page for Clean Reader phonics |
-| **CleanMath.html** | Product Page | Dedicated page for Clean Math Montessori tools |
+| **CleanReader.html** | Product Showcase | Terracotta hero + journey track + feature rows + CTA |
+| **CleanMath.html** | Product Showcase | Same showcase pattern, 6-tool kit layout |
 | **download-clean-reader.html**| Acquisition | Acquisition page for Clean Reader |
 | **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
 | **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
@@ -105,7 +105,8 @@
 ### Component Conventions
 
 **CTAs:**
-- Primary: `background: var(--terracotta)`, white text, 2px border-radius
+- Primary on cream: `background: var(--terracotta)`, white text, 2px border-radius
+- Primary on terracotta: `.btn-primary-light` — cream background, ink text, 3px radius
 - Ghost: border-bottom only, no background
 - Nav CTA: `border: 1.5px solid var(--ink)`, inverts on hover
 
@@ -118,19 +119,25 @@ Always precede section headings. Color: `var(--ink-faint)`.
 **Section eyebrows:**
 A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero only.
 
-**Feature cards:**
+**Product page showcase (CleanReader.html, CleanMath.html):**
+The product pages follow a fixed section flow:
+
+1. **`.product-hero`** — Full-width terracotta gradient (`linear-gradient(150deg, #a85839…#d4856b)`). Left: app icon + h1 + lead + CTA. Right: 3 staggered device frames (`.hero-device--left/center/right`) with rotation and z-index layering. On mobile, only center device shown.
+2. **`.manifesto`** — Dark blockquote strip (existing pattern).
+3. **`.journey-section`** — Horizontal connected flow (`.journey-track`) of step dots + connectors. Shows how modules form a progressive system. Goes vertical on mobile.
+4. **`.feature-showcase-section`** — Alternating 2-col rows (`.feature-row` / `.feature-row.reversed`). Each pairs text (number + h3 + description) with a device-framed screenshot. Visual always shows first on mobile.
+5. **`.privacy-strip`** — Dark centered strip with shield icon, h2, and copy.
+6. **`.product-how-section`** — 3-col grid (`.product-how-grid`) on `--cream-deep`. Steps numbered 01/02/03 with title + description.
+7. **`.trust-strip-section`** — Horizontal badge row (`.trust-badges`) with icon circles + labels.
+8. **`.product-cta-section`** — Dark section with app icon, h2, copy, and store download buttons.
+9. **Email signup** + **Footer** (shared components).
+
+**Feature cards (legacy, used on older layouts):**
 - Numbered `01–06` in Lora italic at top
 - Icon circle (40px, colored background matching feature type)
 - H3 + body copy
 - Hover: `background: var(--cream-deep)`
 - Arranged in a **3-column grid** separated by 1px `var(--rule)` lines
-
-**Screenshot placeholders:**
-- `aspect-ratio: 9/16` frames
-- `background: var(--cream-deep)`, `border: 1px solid var(--rule)`
-- Inner dashed border for "replace me" affordance
-- Caption below in `.label` style
-- **Replace with actual screenshots when available**
 
 **Product showcase cards (index.html):**
 - 2-column grid on desktop, 1 on mobile
@@ -138,7 +145,7 @@ A 32px horizontal rule in `var(--terracotta)` + label text, used in the hero onl
 - H3 + brand label + body copy + "Learn more" button
 - Hover: `transform: translateY(-4px)`, shadow transition
 
-**Composite worksheet visual (product pages):**
+**Composite worksheet visual (worksheets page):**
 - Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
 - Uses `.worksheet-visual-group` for relative positioning and responsive scaling.
 - Remains visible on all layouts to bridge the gap between physical and digital.
