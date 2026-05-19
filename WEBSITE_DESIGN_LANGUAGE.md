@@ -140,10 +140,15 @@ The product pages follow a fixed section flow:
 - Arranged in a **3-column grid** separated by 1px `var(--rule)` lines
 
 **Product showcase cards (index.html):**
-- 2-column grid on desktop, 1 on mobile
-- `aspect-ratio: 16/10` preview at top
-- H3 + brand label + body copy + "Learn more" button
-- Hover: `transform: translateY(-4px)`, shadow transition
+- 2-column grid on desktop, 1 on mobile.
+- Cards styled with `--cream` background, solid border, and subtle transform on hover (`translateY(-6px)`).
+- Card top is a `.product-preview` containing a scaled-down device mockup (`.product-preview-device` at 160px width) holding the screenshot. Hovering the card gently lifts and scales the device mockup.
+- Cards stack vertically on phone viewports with aspect ratio adjusted.
+
+**Homepage Hero Mockups (index.html):**
+- Uses `.home-hero-devices` to render two overlapping staggered device frames (`.home-hero-device--cleanreader` and `.home-hero-device--cleanmath`) with opposite rotations (`-6deg` and `6deg`) and subtle translate.
+- On hover, the devices slide slightly further apart (`-65px` and `65px`) for a dynamic visual effect.
+- Restructured to stack text on top and mockups below on tablet/mobile screens (instead of hiding).
 
 **Composite worksheet visual (worksheets page):**
 - Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
