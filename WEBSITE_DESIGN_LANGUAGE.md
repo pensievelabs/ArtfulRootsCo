@@ -144,11 +144,13 @@ The product pages follow a fixed section flow:
 - Cards styled with `--cream` background, solid border, and subtle transform on hover (`translateY(-6px)`).
 - Card top is a `.product-preview` containing a scaled-down device mockup (`.product-preview-device` at 160px width) holding the screenshot. Hovering the card gently lifts and scales the device mockup.
 - Cards stack vertically on phone viewports with aspect ratio adjusted.
+- Card info section uses `.product-info-header` displaying the app icon (`.product-card-icon` at 54px size, rounded 12px) side-by-side with the eyebrow category label and the main Lora-font title.
 
 **Homepage Hero Mockups (index.html):**
 - Uses `.home-hero-devices` to render two overlapping staggered device frames (`.home-hero-device--cleanreader` and `.home-hero-device--cleanmath`) with opposite rotations (`-6deg` and `6deg`) and subtle translate.
 - On hover, the devices slide slightly further apart (`-65px` and `65px`) for a dynamic visual effect.
 - Restructured to stack text on top and mockups below on tablet/mobile screens (instead of hiding).
+- Displays floating app icons (`.home-device-floating-icon` at 52px size, 44px on tablet, 38px on phone) overlapping the device screens for recognition and branding.
 
 **Composite worksheet visual (worksheets page):**
 - Layered `SheetMockup.png` (base) and iPhone mockup (overlay).

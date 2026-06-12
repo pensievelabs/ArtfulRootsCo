@@ -3262,8 +3262,86 @@ footer {
   height: 22px;
 }
 
+/* App Icons floating on Home Hero devices */
+.home-device-floating-icon {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  border: 2px solid var(--cream);
+  z-index: 5;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.home-device-floating-icon--reader {
+  bottom: -12px;
+  left: -12px;
+  transform: rotate(-4deg);
+}
+
+.home-device-floating-icon--math {
+  top: -12px;
+  right: -12px;
+  transform: rotate(4deg);
+}
+
+.home-hero-device:hover .home-device-floating-icon {
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Product Cards Icon Header */
+.product-info-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.product-card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(42, 39, 36, 0.08);
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.product-showcase-card:hover .product-card-icon {
+  transform: scale(1.05);
+}
+
+.product-info-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info-header-text .label {
+  margin: 0 0 0.20rem 0;
+}
+
+.product-info-header-text h3 {
+  margin: 0 !important;
+}
+
 /* Responsive adjustments for new elements */
 @media (max-width: 1024px) {
+  .home-device-floating-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+  .home-device-floating-icon--reader {
+    bottom: -10px;
+    left: -10px;
+  }
+  .home-device-floating-icon--math {
+    top: -10px;
+    right: -10px;
+  }
+
   .home-hero-devices {
     height: 420px;
     max-width: 380px;
@@ -3286,6 +3364,21 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .home-device-floating-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    border-width: 1.5px;
+  }
+  .home-device-floating-icon--reader {
+    bottom: -8px;
+    left: -8px;
+  }
+  .home-device-floating-icon--math {
+    top: -8px;
+    right: -8px;
+  }
+
   /* Prevent hiding on mobile! Stack it instead. */
   .hero-visual {
     display: flex !important;
