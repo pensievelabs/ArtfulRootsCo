@@ -14,8 +14,8 @@
   ],
   "routes": [
     {
-      "src": "/clean-reader-worksheets",
-      "dest": "/worksheets.html"
+      "src": "/worksheets",
+      "dest": "/clean-reader-worksheets"
     },
     {
       "src": "/api/(.*)",

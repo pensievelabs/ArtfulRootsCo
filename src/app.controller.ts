@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('clean-reader-worksheets')
-  @Redirect('/worksheets', 302)
-  getCleanReaderWorksheets() {}
+  @Get('worksheets')
+  @Redirect('/clean-reader-worksheets', 301)
+  getWorksheetsRedirect() {}
 }

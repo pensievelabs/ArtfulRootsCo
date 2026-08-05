@@ -14,9 +14,9 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('clean-reader-worksheets', () => {
+  describe('worksheets redirect', () => {
     it('should be defined', () => {
-      expect(appController.getCleanReaderWorksheets).toBeDefined();
+      expect(appController.getWorksheetsRedirect).toBeDefined();
     });
   });
 });
