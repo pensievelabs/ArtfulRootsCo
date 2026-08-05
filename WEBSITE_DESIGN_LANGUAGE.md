@@ -97,7 +97,7 @@
 | **download-clean-reader.html**| Acquisition | Acquisition page for Clean Reader |
 | **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
 | **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
-| **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` |
+| **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` (Permalink: `/clean-reader-worksheets`) |
 | **privacy.html** | Terms | Brand-wide privacy policy; uses `.policy-header` |
 
 ---
