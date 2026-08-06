@@ -98,7 +98,7 @@
 | **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
 | **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
 | **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` (Permalink: `/clean-reader-worksheets`) |
-| **privacy.html** | Terms | Brand-wide privacy policy; uses `.policy-header` |
+| **privacy.html** | Terms | Brand-wide privacy policy; specifies outgoing links policy (apps only link to artfulroots.co for worksheets/support); uses `.policy-header` |
 
 ---
 
