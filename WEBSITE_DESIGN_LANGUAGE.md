@@ -94,8 +94,10 @@
 | **index.html** | Brand Portal | Hero mission statement, philosophy teaser, product cards |
 | **CleanReader.html** | Product Showcase | Terracotta hero + journey track + feature rows + CTA |
 | **CleanMath.html** | Product Showcase | Same showcase pattern, 6-tool kit layout |
+| **Seedling.html** | Product Showcase | Financial literacy showcase (Ages 4–8), home bank, jars, ledgers |
 | **download-clean-reader.html**| Acquisition | Acquisition page for Clean Reader |
 | **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
+| **download-seedling.html**| Acquisition | Acquisition page for Seedling (download links greyed out / coming soon) |
 | **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
 | **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` (Permalink: `/clean-reader-worksheets`) |
 | **privacy.html** | Terms | Brand-wide privacy policy; specifies outgoing links policy (apps only link to artfulroots.co for worksheets/support); uses `.policy-header` |
@@ -147,10 +149,10 @@ The product pages follow a fixed section flow:
 - Card info section uses `.product-info-header` displaying the app icon (`.product-card-icon` at 54px size, rounded 12px) side-by-side with the eyebrow category label and the main Lora-font title.
 
 **Homepage Hero Mockups (index.html):**
-- Uses `.home-hero-devices` to render two overlapping staggered device frames (`.home-hero-device--cleanreader` and `.home-hero-device--cleanmath`) with opposite rotations (`-6deg` and `6deg`) and subtle translate.
-- On hover, the devices slide slightly further apart (`-65px` and `65px`) for a dynamic visual effect.
-- Restructured to stack text on top and mockups below on tablet/mobile screens (instead of hiding).
-- Displays floating app icons (`.home-device-floating-icon` at 52px size, 44px on tablet, 38px on phone) overlapping the device screens for recognition and branding.
+- Uses `.home-hero-devices` to render three staggered device frames: `.home-hero-device--cleanreader` (left, -8deg rotation), `.home-hero-device--seedling` (center foreground, 0deg, -20px translateY), and `.home-hero-device--cleanmath` (right, 8deg rotation).
+- On hover, the devices expand outwards (`-135px`, `-32px` scale(1.03), and `135px`) for a dynamic visual fan effect.
+- Stacks text on top and mockups below on tablet/mobile screens.
+- Displays floating app icons (`.home-device-floating-icon` at 52px size, 44px on tablet, 38px on phone) overlapping the device screens for immediate app recognition.
 
 **Composite worksheet visual (worksheets page):**
 - Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
