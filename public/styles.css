@@ -3507,3 +3507,905 @@ footer {
   }
 }
 
+/* ═════════════════════════════════════════════════════════════════════════
+   ─── ACQUISITION LANDING PAGE (Psychology & Storytelling Framework) ───
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* ─── 1. HERO HOOK & ESTABLISHING SHOT ─── */
+.hook-hero {
+  padding: 7.5rem 0 3.5rem;
+  background: var(--cream);
+  position: relative;
+}
+
+.hook-hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hook-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.75rem;
+  background: var(--terracotta-light);
+  color: var(--terracotta-dark);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.hook-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--terracotta);
+}
+
+.hook-hero h1 {
+  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  letter-spacing: -0.015em;
+}
+
+.hook-hero h1 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.hook-hero-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink-muted);
+  margin-bottom: 1.25rem;
+  max-width: 580px;
+}
+
+.hook-hero-lead strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Fast Villain Callout in First Viewport */
+.hook-villain-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.hook-villain-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #f8ebe6;
+  color: #a84832;
+  border: 1px solid rgba(196, 105, 74, 0.2);
+}
+
+.hook-villain-pill--calm {
+  background: var(--sage-light);
+  color: var(--sage);
+  border-color: rgba(90, 122, 92, 0.25);
+}
+
+.hook-pricing-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hook-price-tag {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--terracotta);
+  font-weight: 500;
+}
+
+.hook-price-note {
+  font-size: 0.84rem;
+  color: var(--ink-faint);
+  border-left: 1px solid var(--rule);
+  padding-left: 0.85rem;
+}
+
+.hook-hero-actions {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hook-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+.hook-guarantee svg {
+  width: 15px;
+  height: 15px;
+  color: var(--sage);
+  flex-shrink: 0;
+}
+
+.hook-hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hook-device-card {
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 16px 36px rgba(42, 39, 36, 0.06);
+  position: relative;
+}
+
+.hook-device-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hook-device-app-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.hook-device-header-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hook-device-header-subtitle {
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hook-device-frame {
+  background: #1e1d1b;
+  border-radius: 22px;
+  padding: 6px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.85rem;
+}
+
+.hook-device-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  aspect-ratio: 1242 / 2688;
+  object-fit: cover;
+}
+
+.hook-device-caption {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  text-align: center;
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+/* Lifestyle Image Section */
+.lifestyle-banner-section {
+  padding: 2.5rem 0 5.5rem;
+  background: var(--cream);
+}
+
+.lifestyle-banner-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 2.5rem;
+  overflow: hidden;
+}
+
+.lifestyle-banner-copy h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.lifestyle-banner-copy p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  margin-bottom: 1.25rem;
+}
+
+.lifestyle-banner-img-wrap {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  box-shadow: 0 12px 30px rgba(42, 39, 36, 0.08);
+}
+
+.lifestyle-banner-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.lifestyle-banner-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(253, 251, 247, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.4rem 0.85rem;
+  border-radius: 2px;
+  font-size: 0.72rem;
+  font-family: var(--font-serif);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  font-style: italic;
+}
+
+/* ─── 2. THE VILLAIN SECTION ("The Educational Casino") ─── */
+.villain-section {
+  background: var(--cream-deep);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 5.5rem 0;
+}
+
+.villain-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.villain-header h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.villain-header h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.villain-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+}
+
+.villain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.villain-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 2rem 1.6rem;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.villain-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 105, 74, 0.4);
+}
+
+.villain-card--featured {
+  grid-column: span 1;
+  background: #fbf7f4;
+  border-color: rgba(196, 105, 74, 0.25);
+}
+
+.villain-icon-pill {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f8ebe6;
+  border: 1px solid rgba(196, 105, 74, 0.2);
+  color: var(--terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+  font-size: 1.15rem;
+}
+
+.villain-icon-pill svg {
+  width: 20px;
+  height: 20px;
+}
+
+.villain-card h3 {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+  font-family: var(--font-serif);
+}
+
+.villain-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* ─── 3. THE ORIGIN STORY (Hero's Journey) ─── */
+.origin-story-section {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+
+.origin-story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.origin-story-copy .label {
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.origin-story-copy h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  line-height: 1.22;
+  margin-bottom: 1.75rem;
+  color: var(--ink);
+}
+
+.origin-story-copy h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.origin-story-copy p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-muted);
+  margin-bottom: 1.25rem;
+}
+
+.origin-highlight-quote {
+  border-left: 3px solid var(--terracotta);
+  padding: 1.15rem 1.5rem;
+  background: var(--cream-deep);
+  border-radius: 0 4px 4px 0;
+  margin: 1.75rem 0;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink);
+  font-style: italic;
+}
+
+.origin-author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.origin-author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+
+.origin-author-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.origin-author-role {
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.origin-visual-stack {
+  position: relative;
+}
+
+.origin-portrait-frame {
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 16px 36px rgba(42, 39, 36, 0.06);
+}
+
+.origin-portrait-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.origin-badge-card {
+  position: absolute;
+  bottom: -18px;
+  left: -18px;
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  padding: 0.85rem 1.15rem;
+  border-radius: 3px;
+  box-shadow: 0 12px 24px rgba(42, 39, 36, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 250px;
+}
+
+.origin-badge-card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.origin-badge-card-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.origin-badge-card-title {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.origin-badge-card-sub {
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  margin-top: 0.1rem;
+}
+
+/* ─── 4. THE ANTIDOTE (Chekhov's Gun) ─── */
+.antidote-section {
+  padding: 6rem 0;
+  background: var(--cream-deep);
+  border-top: 1px solid var(--rule);
+}
+
+.antidote-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+}
+
+.antidote-header h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  margin-top: 0.6rem;
+  margin-bottom: 0.85rem;
+  color: var(--ink);
+}
+
+.antidote-header h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.antidote-header p {
+  font-size: 1.05rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+.antidote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.antidote-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.antidote-card:hover {
+  transform: translateY(-3px);
+}
+
+.antidote-card--wide {
+  grid-column: span 1.5;
+}
+
+.antidote-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  border: 1px solid rgba(90, 122, 92, 0.2);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+}
+
+.antidote-icon-wrapper svg {
+  width: 20px;
+  height: 20px;
+}
+
+.antidote-card h3 {
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+  font-family: var(--font-serif);
+}
+
+.antidote-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* Antidote Screenshot Showcase - Exact Aspect Ratio */
+.antidote-preview-box {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.antidote-preview-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.antidote-preview-sub {
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  margin-bottom: 2.5rem;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.antidote-screens-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.antidote-screen-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.antidote-screen-frame {
+  background: #1e1d1b;
+  border-radius: 18px;
+  padding: 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 190px;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.antidote-screen-frame:hover {
+  transform: translateY(-4px);
+}
+
+.antidote-screen-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 13px;
+  aspect-ratio: 1242 / 2688;
+  object-fit: cover;
+}
+
+.antidote-screen-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.antidote-screen-desc {
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  margin-top: 0.15rem;
+}
+
+/* ─── 5. BOOKENDING (Closing Tension Resolution & Final CTA) ─── */
+.bookend-section {
+  padding: 7rem 0;
+  background: var(--cream);
+  position: relative;
+  text-align: center;
+}
+
+.bookend-card {
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 4.5rem 3rem;
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 16px 40px rgba(42, 39, 36, 0.05);
+}
+
+.bookend-app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid var(--cream);
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.bookend-card h2 {
+  font-size: clamp(2rem, 3.5vw, 2.85rem);
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.bookend-card h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.bookend-copy {
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: var(--ink-muted);
+  max-width: 620px;
+  margin: 0 auto 2.25rem;
+}
+
+.bookend-price {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--terracotta);
+  font-style: italic;
+  margin-bottom: 1.75rem;
+}
+
+.bookend-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.bookend-sublinks {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.bookend-sublinks a {
+  color: var(--terracotta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.bookend-sublinks a:hover {
+  opacity: 0.8;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS (Desktop > 1024px, Tablet 769–1024px, Phone ≤ 768px) ─── */
+@media (max-width: 1024px) {
+  .hook-hero {
+    padding: 7.5rem 0 4.5rem;
+  }
+  .hook-hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hook-hero-visual {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .villain-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .villain-card:last-child {
+    grid-column: span 2;
+  }
+  .origin-story-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .origin-visual-stack {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .antidote-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .antidote-card:last-child {
+    grid-column: span 2;
+  }
+  .antidote-screens-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hook-hero {
+    padding: 6.5rem 0 3.5rem;
+  }
+  .hook-hero-lead {
+    font-size: 1.02rem;
+  }
+  .hook-pricing-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .hook-price-note {
+    border-left: none;
+    padding-left: 0;
+  }
+  .hook-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+  }
+  .villain-section {
+    padding: 4.5rem 0;
+  }
+  .villain-header {
+    margin-bottom: 2.5rem;
+  }
+  .villain-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .villain-card:last-child {
+    grid-column: span 1;
+  }
+  .villain-card {
+    padding: 1.75rem 1.5rem;
+  }
+  .origin-story-section {
+    padding: 4.5rem 0;
+  }
+  .origin-highlight-quote {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+  .origin-badge-card {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  .antidote-section {
+    padding: 4.5rem 0;
+  }
+  .antidote-header {
+    margin-bottom: 2.5rem;
+  }
+  .antidote-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .antidote-card:last-child {
+    grid-column: span 1;
+  }
+  .antidote-card {
+    padding: 1.75rem 1.5rem;
+  }
+  .antidote-preview-box {
+    padding: 2.5rem 1.5rem;
+  }
+  .antidote-screens-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .antidote-screen-frame {
+    border-radius: 14px;
+    padding: 4px;
+  }
+  .antidote-screen-frame img {
+    border-radius: 10px;
+  }
+  .bookend-section {
+    padding: 4.5rem 0;
+  }
+  .bookend-card {
+    padding: 3rem 1.5rem;
+  }
+  .bookend-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bookend-sublinks {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+

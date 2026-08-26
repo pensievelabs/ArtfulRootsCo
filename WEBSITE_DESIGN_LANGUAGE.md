@@ -154,10 +154,13 @@ The product pages follow a fixed section flow:
 - Stacks text on top and mockups below on tablet/mobile screens.
 - Displays floating app icons (`.home-device-floating-icon` at 52px size, 44px on tablet, 38px on phone) overlapping the device screens for immediate app recognition.
 
-**Composite worksheet visual (worksheets page):**
-- Layered `SheetMockup.png` (base) and iPhone mockup (overlay).
-- Uses `.worksheet-visual-group` for relative positioning and responsive scaling.
-- Remains visible on all layouts to bridge the gap between physical and digital.
+**Acquisition Landing Page Architecture (download-clean-reader.html):**
+Follows a 5-part psychological storytelling flow:
+1. **`.hook-hero`**: First-viewport hook with immediate problem anchor, villain pills (`.hook-villain-strip`), and single-purchase CTA. Uses natural `1242 / 2688` aspect ratio device mockup showing real in-app decodable stories.
+2. **`.villain-section`**: "The Educational Casino" 5-card grid on `--cream-deep` exposing dopamine harvesting, mascots, and subscriptions.
+3. **`.origin-story-section`**: Parent-to-parent journey ("I just wanted to teach my 3-year-old to read") paired with Montessori calm lifestyle imagery (`/assets/clean-reader-lifestyle.jpg`).
+4. **`.antidote-section`**: Chekhov's gun feature slayers paired with 4-card screenshot breakdown.
+5. **`.bookend-section`**: Retrospective coherence closing callout returning to peace and calm.
 
 ---
 
