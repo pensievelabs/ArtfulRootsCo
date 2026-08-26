@@ -154,6 +154,13 @@ The product pages follow a fixed section flow:
 - Stacks text on top and mockups below on tablet/mobile screens.
 - Displays floating app icons (`.home-device-floating-icon` at 52px size, 44px on tablet, 38px on phone) overlapping the device screens for immediate app recognition.
 
+**Home Page Architecture (index.html):**
+- **Hero**: Staggered interactive mockups with dual CTAs (`Explore Our Apps` & `Download Free Worksheets`).
+- **Contrast Strip**: Side-by-side comparison ("The Educational Casino" vs. "The Artful Roots Method").
+- **Dual-Track Learning System**: Explicitly bridges physical printable worksheets (pencil motor skills) with talking digital workbooks (auditory clarity).
+- **Product Showcase**: 3 product cards with launch pricing transparency ($4.99 one-time).
+- **Studio Principles**: Core non-negotiables (No Gamification, Paper on Glass, Total Privacy).
+
 **Acquisition Landing Page Architecture (download-clean-reader.html):**
 Follows a 5-part psychological storytelling flow:
 1. **`.hook-hero`**: First-viewport hook with immediate problem anchor, villain pills (`.hook-villain-strip`), and single-purchase CTA. Uses natural `1242 / 2688` aspect ratio device mockup showing real in-app decodable stories.

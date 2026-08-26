@@ -4590,8 +4590,8 @@ footer {
 }
 
 .contrast-card--calm {
-  background: var(--cream-deep);
-  border-color: rgba(90, 122, 92, 0.35);
+  background: #f4f8f4;
+  border-color: rgba(46, 125, 50, 0.3);
 }
 
 .contrast-tag {
@@ -4610,7 +4610,8 @@ footer {
 }
 
 .contrast-tag--calm {
-  color: var(--sage);
+  color: #276749;
+  font-weight: 600;
 }
 
 .contrast-card h3 {
@@ -4644,9 +4645,9 @@ footer {
 }
 
 .contrast-icon-check {
-  color: var(--sage);
+  color: #2e7d32;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   flex-shrink: 0;
 }
