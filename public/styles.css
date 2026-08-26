@@ -4408,4 +4408,417 @@ footer {
   }
 }
 
+/* ═════════════════════════════════════════════════════════════════════════
+   ─── PRODUCT SHOWCASE INFLUENCE & LIFESTYLE ENHANCEMENTS ───
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* ─── DUAL-TRACK HYBRID SYSTEM (Worksheets + App Synergy) ─── */
+.hybrid-system-section {
+  padding: 6.5rem 0;
+  background: var(--cream-deep);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.hybrid-system-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.hybrid-system-header h2 {
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.hybrid-system-header h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.hybrid-lead {
+  font-size: 1.08rem;
+  color: var(--ink-muted);
+  line-height: 1.75;
+}
+
+.hybrid-roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.hybrid-role-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+.hybrid-role-eyebrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.hybrid-role-pill {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+}
+
+.hybrid-role-pill--paper {
+  background: var(--sage-light);
+  color: var(--sage);
+  border: 1px solid rgba(90, 122, 92, 0.3);
+}
+
+.hybrid-role-pill--digital {
+  background: var(--terracotta-light);
+  color: var(--terracotta);
+  border: 1px solid rgba(196, 105, 74, 0.3);
+}
+
+.hybrid-role-num {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--ink-faint);
+}
+
+.hybrid-role-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.hybrid-role-tagline {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hybrid-role-tagline strong {
+  color: var(--terracotta);
+}
+
+.hybrid-role-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.hybrid-role-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.hybrid-role-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--terracotta);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.hybrid-role-cta {
+  margin-top: auto;
+}
+
+/* ─── LIFESTYLE COMPARISON (The Villain Casino vs. Calm Tech) ─── */
+.lifestyle-contrast-section {
+  padding: 6.5rem 0;
+  background: var(--cream);
+}
+
+.lifestyle-contrast-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+}
+
+.lifestyle-contrast-header h2 {
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.lifestyle-contrast-header h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.lifestyle-contrast-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.contrast-card {
+  border-radius: 4px;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+}
+
+.contrast-card--villain {
+  background: #fbf5f2;
+  border-color: rgba(196, 105, 74, 0.3);
+}
+
+.contrast-card--calm {
+  background: var(--cream-deep);
+  border-color: rgba(90, 122, 92, 0.35);
+}
+
+.contrast-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.contrast-tag--villain {
+  color: #a84832;
+}
+
+.contrast-tag--calm {
+  color: var(--sage);
+}
+
+.contrast-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.contrast-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contrast-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+}
+
+.contrast-icon-cross {
+  color: #a84832;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.contrast-icon-check {
+  color: var(--sage);
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+/* ─── RECIPROCITY BRIDGE (Free Sheets -> Paid App) ─── */
+.reciprocity-section {
+  padding: 6.5rem 0;
+  background: var(--ink);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.reciprocity-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.reciprocity-copy .label {
+  color: rgba(245, 240, 232, 0.45);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.reciprocity-copy h2 {
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  color: #f5f0e8;
+  margin-bottom: 1.25rem;
+  line-height: 1.22;
+}
+
+.reciprocity-copy h2 em {
+  font-style: italic;
+  color: var(--terracotta);
+}
+
+.reciprocity-copy p {
+  color: rgba(245, 240, 232, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+.reciprocity-actions {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reciprocity-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.reciprocity-img-frame {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: 380px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.reciprocity-img-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+}
+
+/* ─── ELIMINATE REASONS TO SAY NO (Zero Friction Grid) ─── */
+.zero-friction-section {
+  padding: 6rem 0;
+  background: var(--cream-deep);
+  border-top: 1px solid var(--rule);
+}
+
+.zero-friction-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.zero-friction-header h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  margin-top: 0.6rem;
+  margin-bottom: 0.85rem;
+  color: var(--ink);
+}
+
+.zero-friction-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.zero-friction-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.zero-friction-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.15rem;
+}
+
+.zero-friction-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.zero-friction-card h3 {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-serif);
+}
+
+.zero-friction-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hybrid-roles-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .lifestyle-contrast-grid {
+    grid-template-columns: 1fr;
+  }
+  .reciprocity-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .zero-friction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hybrid-system-section {
+    padding: 4.5rem 0;
+  }
+  .hybrid-role-card {
+    padding: 2rem 1.5rem;
+  }
+  .zero-friction-grid {
+    grid-template-columns: 1fr;
+  }
+  .contrast-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .reciprocity-section {
+    padding: 4.5rem 0;
+  }
+}
+
 
