@@ -169,6 +169,14 @@ Follows a 5-part psychological storytelling flow:
 4. **`.antidote-section`**: Chekhov's gun feature slayers paired with 4-card screenshot breakdown.
 5. **`.bookend-section`**: Retrospective coherence closing callout returning to peace and calm.
 
+**Free Resources Architecture (clean-reader-worksheets.html):**
+- **Hero**: Sensory problem anchor with immediate 50-page pack email delivery.
+- **Principles Strip**: 4 trust badges (Science of Reading, Zero Clipart, 100% Offline, Free Forever).
+- **Two Flaws Contrast**: Exposes guessing from clipart + sensory overload from gamified apps vs. Montessori color-coded sheets + Clean Reader audio layer.
+- **50-Page Scope & Sequence**: 5-stage card grid detailing 44 phonemes, CVC blending, digraphs, sight words, and decodable stories.
+- **Daily Calm Ritual**: 3-step home routine (Audio first $\rightarrow$ Pencil focus $\rightarrow$ Self-check retrieval) with Clean Reader app bridge.
+- **Parent Founder Authority Note**: Relatable origin story on why picture-free sheets prevent guessing.
+
 ---
 
 ### Content Placeholders (Replace These)
