@@ -169,13 +169,11 @@ Follows a 5-part psychological storytelling flow:
 4. **`.antidote-section`**: Chekhov's gun feature slayers paired with 4-card screenshot breakdown.
 5. **`.bookend-section`**: Retrospective coherence closing callout returning to peace and calm.
 
-**Free Resources Architecture (clean-reader-worksheets.html):**
-- **Hero**: Sensory problem anchor with immediate 50-page pack email delivery.
-- **Principles Strip**: 4 trust badges (Science of Reading, Zero Clipart, 100% Offline, Free Forever).
-- **Two Flaws Contrast**: Exposes guessing from clipart + sensory overload from gamified apps vs. Montessori color-coded sheets + Clean Reader audio layer.
-- **50-Page Scope & Sequence**: 5-stage card grid detailing 44 phonemes, CVC blending, digraphs, sight words, and decodable stories.
-- **Daily Calm Ritual**: 3-step home routine (Audio first $\rightarrow$ Pencil focus $\rightarrow$ Self-check retrieval) with Clean Reader app bridge.
-- **Parent Founder Authority Note**: Relatable origin story on why picture-free sheets prevent guessing.
+**Clean Math Architecture (CleanMath.html & download-clean-math.html):**
+- **Core Positioning**: Anti-math anxiety; replaces ticking countdown timers, penalty buzzers, and flashing casino coins with unhurried Montessori manipulatives on glass.
+- **Concrete-to-Abstract (CPA Framework)**: 6 tactile modules (Number Grid subitizing, Tens Frame base-ten building, Bead Chain sequencing, Fraction Pie parts-of-a-whole, Equivalence Scale balance, and Number Bonds decomposition).
+- **Price Transparency**: $4.99 one-time purchase with zero recurring subscriptions or in-app purchases.
+- **Button Conventions**: App Store and Google Play buttons use clean brand labels without embedded price text.
 
 ---
 
