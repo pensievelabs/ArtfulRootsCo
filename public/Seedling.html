@@ -62,8 +62,16 @@
         </div>
         <h1>Teach kids what a dollar<br /><em>actually weighs.</em></h1>
         <p class="product-hero-lead">Science shows a child’s core money habits are formed by age 7. Before you hand your child a plastic debit card or another screen, Seedling gives them a tactile, offline-first home bank to build lifelong financial wisdom.</p>
-        <div class="hero-actions">
-          <span class="btn-primary-light-disabled">Coming Soon</span>
+        <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+          <span style="background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); padding: 0.35rem 0.85rem; border-radius: 2px; font-size: 0.82rem; color: #fff; font-weight: 500;">
+            Free Download on iOS · No subscriptions · 100% Offline
+          </span>
+        </div>
+        <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/download-seedling" class="btn-primary-light">Get the App</a>
+          <a href="#curriculum" class="btn-ghost-light" style="color: #fff; border-color: rgba(255,255,255,0.4); padding: 0.75rem 1.25rem; font-size: 0.9rem;">
+            Explore the Curriculum ↓
+          </a>
         </div>
       </div>
 
@@ -99,7 +107,7 @@
 </section>
 
 <!-- ─── THE CURRICULUM SYSTEM ─── -->
-<section class="journey-section">
+<section class="journey-section" id="curriculum">
   <div class="container">
     <div class="journey-header fade-in">
       <span class="label">The Curriculum</span>
@@ -305,13 +313,28 @@
 </section>
 
 <!-- ─── PRODUCT CTA SECTION ─── -->
-<section class="product-cta-section">
-  <div class="container-narrow fade-in">
-    <img src="/assets/Seedling/seedling.png" alt="Seedling Icon" class="product-cta-icon" />
+<section class="product-cta-section" style="padding: 7rem 0;">
+  <div class="container fade-in" style="text-align: center; max-width: 720px; margin: 0 auto;">
+    <img src="/assets/Seedling/seedling.png" alt="Seedling Icon" class="product-cta-icon" style="width: 72px; height: 72px; border-radius: 18px; margin-bottom: 1.5rem;" />
     <h2>Teach what a dollar actually weighs.</h2>
-    <p>Free to download. No subscriptions, no ads, completely offline. Releasing soon.</p>
-    <div style="margin-top: 2rem;">
-      <span class="btn-disabled">Download Links Coming Soon <span class="badge-coming-soon">Soon</span></span>
+    <p style="color: var(--ink-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem;">
+      Free download on iOS. No subscriptions, no ads, completely offline.
+    </p>
+    <div class="product-cta-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://apps.apple.com/us/app/seedling-teach-kids-money/id6770206184" class="btn-download" target="_blank" rel="noopener">
+        <img src="/assets/apple-logo.svg" alt="Apple" class="btn-download-icon" />
+        <div class="btn-download-text">
+          <span class="btn-download-label">Download on the</span>
+          <span>App Store</span>
+        </div>
+      </a>
+      <span class="btn-download disabled" title="Google Play version coming soon">
+        <img src="/assets/android-logo.svg" alt="Android" class="btn-download-icon" />
+        <div class="btn-download-text">
+          <span class="btn-download-label">Coming Soon on</span>
+          <span>Google Play</span>
+        </div>
+      </span>
     </div>
   </div>
 </section>
@@ -320,8 +343,8 @@
 <div class="signup-section">
   <div class="signup-inner fade-in">
     <span class="label" style="color: rgba(245,240,232,0.35); display: block; margin-bottom: 1rem;">Stay informed</span>
-    <h2>Be notified when Seedling launches.</h2>
-    <p>Occasional updates on Seedling's release and new Calm Tech releases. No spam.</p>
+    <h2>Get updates from our studio.</h2>
+    <p>Occasional thoughtful notes on new features, upcoming platforms, and new Calm Tech releases. No spam.</p>
     <div class="signup-form">
       <input type="email" class="signup-input" placeholder="your@email.com" />
       <button class="btn-signup">Notify me</button>

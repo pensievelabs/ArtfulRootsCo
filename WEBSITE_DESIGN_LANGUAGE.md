@@ -97,7 +97,7 @@
 | **Seedling.html** | Product Showcase | Financial literacy showcase (Ages 4–8), home bank, jars, ledgers |
 | **download-clean-reader.html**| Acquisition | Acquisition page for Clean Reader |
 | **download-clean-math.html**| Acquisition | Acquisition page for Clean Math |
-| **download-seedling.html**| Acquisition | Acquisition page for Seedling (download links greyed out / coming soon) |
+| **download-seedling.html**| Acquisition | Acquisition page for Seedling (Live App Store link + coming-soon Play Store button) |
 | **philosophy.html** | Manifesto | Brand-level commitments and pedagogical pillars |
 | **worksheets.html**| Resources | Resource grid; uses `.hero-worksheets` (Permalink: `/clean-reader-worksheets`) |
 | **privacy.html** | Terms | Brand-wide privacy policy; specifies outgoing links policy (apps only link to artfulroots.co for worksheets/support); uses `.policy-header` |
@@ -174,6 +174,11 @@ Follows a 5-part psychological storytelling flow:
 - **Concrete-to-Abstract (CPA Framework)**: 6 tactile modules (Number Grid subitizing, Tens Frame base-ten building, Bead Chain sequencing, Fraction Pie parts-of-a-whole, Equivalence Scale balance, and Number Bonds decomposition).
 - **Price Transparency**: $4.99 one-time purchase with zero recurring subscriptions or in-app purchases.
 - **Button Conventions**: App Store and Google Play buttons use clean brand labels without embedded price text.
+
+**Seedling Architecture (Seedling.html & download-seedling.html):**
+- **Core Positioning**: Tangible early financial consciousness; bridges physical home bank, chores, and spend/save/give jars.
+- **Price Transparency**: Free download on iOS, zero subscriptions, zero ads, 100% offline.
+- **Store Status**: Live on Apple App Store (Apple ID: `6770206184`, URL: `https://apps.apple.com/us/app/seedling-teach-kids-money/id6770206184`), Google Play coming soon (`.btn-download.disabled`).
 
 ---
 
