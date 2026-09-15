@@ -176,8 +176,10 @@ Follows a 5-part psychological storytelling flow:
 - **Button Conventions**: App Store and Google Play buttons use clean brand labels without embedded price text.
 
 **Seedling Architecture (Seedling.html & download-seedling.html):**
-- **Core Positioning**: Tangible early financial consciousness; bridges physical home bank, chores, and spend/save/give jars.
-- **Price Transparency**: Free download on iOS, zero subscriptions, zero ads, 100% offline.
+- **Core Positioning**: Tangible early financial consciousness and character development; bridges a private offline home bank, chores, spend/save/give jars, and printable heirloom currency notes.
+- **Storytelling Framework**: Follows the 8 behavioral marketing principles (Predictive Processing hook, Establishing Shot checkout scene, concrete word pictures, villain exposure of the cashless illusion/fintech traps, Chekhov's gun feature payoffs, sugar coating, and retrospective bookending in the toy aisle).
+- **Screenshots (7 Assets)**: `1_Bank.PNG` (Home Bank / Willows Bank), `2_SavingsJars.PNG` (The Grove Spend/Save/Give Jars), `3_SavingsGoals.PNG` (Savings Goals & Emojis), `4_Currencies.PNG` (Printable Currency Notes in Color & B&W), `5_Ledger.PNG` (Transaction Ledger), `6_Chores.PNG` (Chores & Daily Habits), `7_Spending.PNG` (Mindful Spending Slider).
+- **Price Transparency**: Free to download; $4.99 one-time in-app purchase for lifetime access. Zero recurring subscriptions, zero ads, 100% offline, zero bank linking.
 - **Store Status**: Live on Apple App Store (Apple ID: `6770206184`, URL: `https://apps.apple.com/us/app/seedling-teach-kids-money/id6770206184`), Google Play coming soon (`.btn-download.disabled`).
 
 ---
