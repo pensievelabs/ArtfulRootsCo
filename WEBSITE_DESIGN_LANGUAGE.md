@@ -15,7 +15,7 @@
 **App names:** Clean Reader, Clean Math
 **Tagline:** "Calm technology for children."
 **Mission:** A studio building tools that respect a child's attention and intelligence.
-**Pricing:** $4.99 one-time purchase per app. No subscriptions or IAPs.
+**Pricing:** No recurring subscriptions. Apps are one-time purchase or free to download with a lifetime unlock. Public website pages display no explicit price figures.
 
 **Voice principles:**
 - Speak *to* parents, not *at* them
@@ -158,7 +158,7 @@ The product pages follow a fixed section flow:
 - **Hero**: Staggered interactive mockups with dual CTAs (`Explore Our Apps` & `Download Free Worksheets`).
 - **Contrast Strip**: Side-by-side comparison ("The Educational Casino" vs. "The Artful Roots Method").
 - **Dual-Track Learning System**: Explicitly bridges physical printable worksheets (pencil motor skills) with talking digital workbooks (auditory clarity).
-- **Product Showcase**: 3 product cards with launch pricing transparency ($4.99 one-time).
+- **Product Showcase**: 3 product cards highlighting zero subscriptions, privacy, and calm principles.
 - **Studio Principles**: Core non-negotiables (No Gamification, Paper on Glass, Total Privacy).
 
 **Acquisition Landing Page Architecture (download-clean-reader.html):**
@@ -172,14 +172,14 @@ Follows a 5-part psychological storytelling flow:
 **Clean Math Architecture (CleanMath.html & download-clean-math.html):**
 - **Core Positioning**: Anti-math anxiety; replaces ticking countdown timers, penalty buzzers, and flashing casino coins with unhurried Montessori manipulatives on glass.
 - **Concrete-to-Abstract (CPA Framework)**: 6 tactile modules (Number Grid subitizing, Tens Frame base-ten building, Bead Chain sequencing, Fraction Pie parts-of-a-whole, Equivalence Scale balance, and Number Bonds decomposition).
-- **Price Transparency**: $4.99 one-time purchase with zero recurring subscriptions or in-app purchases.
+- **Price Transparency**: Single one-time purchase with zero recurring subscriptions or in-app purchases.
 - **Button Conventions**: App Store and Google Play buttons use clean brand labels without embedded price text.
 
 **Seedling Architecture (Seedling.html & download-seedling.html):**
 - **Core Positioning**: Tangible early financial consciousness and character development; bridges a private offline home bank, chores, spend/save/give jars, and printable heirloom currency notes.
 - **Storytelling Framework**: Follows the 8 behavioral marketing principles (Predictive Processing hook, Establishing Shot checkout scene, concrete word pictures, villain exposure of the cashless illusion/fintech traps, Chekhov's gun feature payoffs, sugar coating, and retrospective bookending in the toy aisle).
 - **Screenshots (7 Assets)**: `1_Bank.PNG` (Home Bank / Willows Bank), `2_SavingsJars.PNG` (The Grove Spend/Save/Give Jars), `3_SavingsGoals.PNG` (Savings Goals & Emojis), `4_Currencies.PNG` (Printable Currency Notes in Color & B&W), `5_Ledger.PNG` (Transaction Ledger), `6_Chores.PNG` (Chores & Daily Habits), `7_Spending.PNG` (Mindful Spending Slider).
-- **Price Transparency**: Free to download; $4.99 one-time in-app purchase for lifetime access. Zero recurring subscriptions, zero ads, 100% offline, zero bank linking.
+- **Price Transparency**: Free to download; one-time in-app purchase for lifetime access. Zero recurring subscriptions, zero ads, 100% offline, zero bank linking.
 - **Store Status**: Live on Apple App Store (Apple ID: `6770206184`, URL: `https://apps.apple.com/us/app/seedling-teach-kids-money/id6770206184`), Google Play coming soon (`.btn-download.disabled`).
 
 ---
